@@ -22,24 +22,39 @@
             </ul>
             <div class="score-container">
                 <p>SCORE</p>
-                <span class="score">18</span>
+                <span class="score">0</span>
             </div>
         </article>
     </section>
     <section class="game-container">
         <div class="buttons">
             <div class="first-row">
-                <button class="btn scissors-btn"><img src="/src/images/icon-scissors.svg" alt=""></button>
+                <button id="scissors" class="btn scissors-btn"><img src="/src/images/icon-scissors.svg" alt=""></button>
             </div>
             <div class="second-row">
-                 <button class="btn spock-btn"><img src="/src/images/icon-spock.svg" alt=""></button>
-                <button class="btn paper-btn"><img src="/src/images/icon-paper.svg" alt=""></button>
+                 <button id="spock" class="btn spock-btn"><img src="/src/images/icon-spock.svg" alt=""></button>
+                <button id="paper" class="btn paper-btn"><img src="/src/images/icon-paper.svg" alt=""></button>
             </div>
             <div class="third-row">
-                <button class="btn lizard-btn"><img src="/src/images/icon-lizard.svg" alt=""></button>
-                <button class="btn rock-btn"><img src="/src/images/icon-rock.svg" alt=""></button>
+                <button id="lizard" class="btn lizard-btn"><img src="/src/images/icon-lizard.svg" alt=""></button>
+                <button id="rock" class="btn rock-btn"><img src="/src/images/icon-rock.svg" alt=""></button>
             </div>
         </div>
     </section>
+    <section class="result-container"> 
+        <div class="user">
+            <span>YOU PICKED</span>
+            <button id="scissors" class="btn scissors-btn"><img src="/src/images/icon-scissors.svg" alt=""></button>
+        </div>
+        <div class="result-info">
+            <span>PLACEHOLDER</span>
+            <button id="replay" class="replay-btn">PLAY AGAIN</button>
+        </div>
+        <div class="oponent">
+            <span>THE HOUSE PICKED</span>
+            <button id="lizard" class="btn lizard-btn"><img src="/src/images/icon-lizard.svg" alt=""></button>
+        </div>
+    </section>
 </body>
+<script src="/script.js"></script>
 </html>

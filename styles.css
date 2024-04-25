@@ -159,3 +159,34 @@ section{
     animation: btn-transition 1s ease 0s infinite;
 }
 
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    --height: 400px;
+    --order: solid;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    --border: solid;
+}
+
+.oponent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    --border: solid;
+}
+
+.result-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
