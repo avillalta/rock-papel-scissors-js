@@ -1,0 +1,161 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background: #1A2C4C;
+    color: #fff;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 700;
+    gap: 40px;
+    flex-direction: column;
+}
+
+section{
+    width: 100%;
+    max-width: 750px;
+}
+
+.info-container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border: 2px solid #586480;
+    border-radius: 10px;
+}
+
+.info-container ul{
+    list-style-type: none;
+}
+
+.score-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    background: #fff;
+    color: #787FA6;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    font-family: "Jersey 25", sans-serif;
+}
+
+.score-container p {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.score{
+    color: #5B596D;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "Jersey 25", sans-serif;
+}
+
+.game-container{
+    max-width: 450px;
+}
+
+.buttons{
+    background-image: url(/src/images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.first-row{
+    text-align: center;
+}
+
+.second-row{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.third-row{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.rock-btn{
+    width: 100px;
+    height: 100px;
+    border: 20px solid #E33C5B;
+    border-radius: 100px;
+    box-shadow: 6px 6px 3px 0px #9D1333;
+    cursor:pointer;
+}
+
+.paper-btn{
+    width: 100px;
+    height: 100px;
+    border: 20px solid #5572F4;
+    border-radius: 100px;
+    box-shadow: 6px 6px 3px 0px #2A4BC8;
+    cursor:pointer;
+}
+
+.scissors-btn{
+    width: 100px;
+    height: 100px;
+    border: 20px solid #EBA31C;
+    border-radius: 100px;
+    box-shadow: 6px 6px 3px 0px #C36B14;
+    cursor:pointer;
+}
+
+.lizard-btn{
+    width: 100px;
+    height: 100px;
+    border: 20px solid #8F5CE5;
+    border-radius: 100px;
+    box-shadow: 6px 6px 3px 0px #5E33AA;
+    cursor:pointer;
+}
+
+.spock-btn{
+    width: 100px;
+    height: 100px;
+    border: 20px solid #4CBCD1;
+    border-radius: 100px;
+    box-shadow: 6px 6px 3px 0px #3690AD;
+    cursor:pointer;
+}
+
+.pentagono {
+    z-index: -1;
+    position: absolute;
+}
+
+@keyframes btn-transition{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.btn:hover {
+    animation: btn-transition 1s ease 0s infinite;
+}
+
