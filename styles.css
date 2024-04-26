@@ -98,29 +98,30 @@ section{
     height: 100px;
     border-radius: 100px;
     cursor:pointer;
+    background: #fff;
 }
 
-.rock-btn{
+.rock{
     border: 20px solid #E33C5B;
     box-shadow: 6px 6px 3px 0px #9D1333; 
 }
 
-.paper-btn{
+.paper{
     border: 20px solid #5572F4;
     box-shadow: 6px 6px 3px 0px #2A4BC8;
 }
 
-.scissors-btn{
+.scissors{
     border: 20px solid #EBA31C;
     box-shadow: 6px 6px 3px 0px #C36B14;
 }
 
-.lizard-btn{
+.lizard{
     border: 20px solid #8F5CE5;
     box-shadow: 6px 6px 3px 0px #5E33AA;
 }
 
-.spock-btn{
+.spock{
     border: 20px solid #4CBCD1;
     box-shadow: 6px 6px 3px 0px #3690AD;
 }
@@ -180,7 +181,7 @@ section{
 .replay-btn{
     font-family: "Jersey 25", sans-serif;
     font-size: 20px;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
     cursor:pointer;
 }
