@@ -93,49 +93,36 @@ section{
     padding: 50px;
 }
 
-.rock-btn{
+.btn{
     width: 100px;
     height: 100px;
-    border: 20px solid #E33C5B;
     border-radius: 100px;
-    box-shadow: 6px 6px 3px 0px #9D1333;
     cursor:pointer;
+}
+
+.rock-btn{
+    border: 20px solid #E33C5B;
+    box-shadow: 6px 6px 3px 0px #9D1333; 
 }
 
 .paper-btn{
-    width: 100px;
-    height: 100px;
     border: 20px solid #5572F4;
-    border-radius: 100px;
     box-shadow: 6px 6px 3px 0px #2A4BC8;
-    cursor:pointer;
 }
 
 .scissors-btn{
-    width: 100px;
-    height: 100px;
     border: 20px solid #EBA31C;
-    border-radius: 100px;
     box-shadow: 6px 6px 3px 0px #C36B14;
-    cursor:pointer;
 }
 
 .lizard-btn{
-    width: 100px;
-    height: 100px;
     border: 20px solid #8F5CE5;
-    border-radius: 100px;
     box-shadow: 6px 6px 3px 0px #5E33AA;
-    cursor:pointer;
 }
 
 .spock-btn{
-    width: 100px;
-    height: 100px;
     border: 20px solid #4CBCD1;
-    border-radius: 100px;
     box-shadow: 6px 6px 3px 0px #3690AD;
-    cursor:pointer;
 }
 
 .pentagono {
@@ -160,7 +147,7 @@ section{
 }
 
 .result-container {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -188,5 +175,13 @@ section{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.replay-btn{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 10px;
+    cursor:pointer;
 }
 
