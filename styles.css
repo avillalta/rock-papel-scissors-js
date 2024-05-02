@@ -33,13 +33,18 @@ section{
     justify-content: space-between;
     border: 2px solid #586480;
     border-radius: 10px;
+    transition: 5s ease-in-out all;
 }
 
 .info-container ul{
     list-style-type: none;
 }
 
-.score-container{
+.main-container {
+    flex-grow: 1;
+}
+
+.score-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +71,7 @@ section{
 }
 
 .game-container{
-    max-width: 450px;
+    width: 450px;
 }
 
 .buttons{

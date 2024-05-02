@@ -1,11 +1,11 @@
 
 
-const scissors = document.getElementById("scissors"),
-    spock = document.getElementById("spock"),
-    paper = document.getElementById("paper"),
-    lizard = document.getElementById("lizard"),
-    rock = document.getElementById("rock"),
-    replay = document.getElementById("replay");
+const scissors = document.querySelector("#scissors"),
+    spock = document.querySelector("#spock"),
+    paper = document.querySelector("#paper"),
+    lizard = document.querySelector("#lizard"),
+    rock = document.querySelector("#rock"),
+    replay = document.querySelector("#replay");
 
 
 const options = ['scissors', 'spock', 'paper', 'lizard', 'rock'];
@@ -29,11 +29,10 @@ rock.addEventListener('click', () => selectHand('rock'));
 replay.addEventListener('click', () => resetGame());
 
 
-
 const selectHand = (hand) => {
     const userHand = hand;
     const oponentHand = getRandomHand();
-    const result = getWinner(userHand, oponentHand);
+    const result = getResult(userHand, oponentHand);
 
     document.querySelector('#result').innerText = result[0];
     document.querySelector('#user').classList.add(result[1]);
@@ -44,20 +43,22 @@ const selectHand = (hand) => {
 
     document.querySelector('.game-container').setAttribute('style', 'display: none')
     document.querySelector('.result-container').setAttribute('style', 'display: flex')
-
-    console.log('Has seleccionado:', userHand,' El oponente ha elegido:', oponentHand);
 }
 
 function getRandomHand() {
     return options[Math.floor(Math.random()*options.length)]
 }
 
-function getWinner(userHand, oponentHand){
+function getResult(userHand, oponentHand){
     if ( userHand === oponentHand ){
         return ['DRAW', userHand, oponentHand]
     } else {
         const result = winner[userHand].some( x => oponentHand === x );
-        return result ? ['YOU WIN', userHand, oponentHand] : ['YOU LOSE', userHand, oponentHand]
+        //return result ? ['YOU WIN', userHand, oponentHand] : ['YOU LOSE', userHand, oponentHand]
+        if (result){
+            setScore();
+            return ['YOU WIN', userHand, oponentHand];
+        } else return ['YOU LOSE', userHand, oponentHand];
     }
 }
 
