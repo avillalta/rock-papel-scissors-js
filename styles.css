@@ -7,7 +7,9 @@
 }
 
 body{
-    background: #1A2C4C;
+    background: #1488cc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1488cc, #2b32b2); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1488cc, #2b32b2);
     color: #fff;
     min-height: 100vh;
     width: 100%;
@@ -30,8 +32,9 @@ section{
 .info-container{
     display: flex;
     padding: 20px;
+    margin-top: 30px;
     justify-content: space-between;
-    border: 2px solid #586480;
+    border: 2px solid #c5c9d1;
     border-radius: 10px;
 }
 
@@ -75,6 +78,8 @@ section{
 
 .game-container{
     width: 450px;
+    margin-top: 15px;
+    transform: scale(1.1);
 }
 
 .buttons{
@@ -115,8 +120,8 @@ section{
 }
 
 .paper{
-    border: 20px solid #5572F4;
-    box-shadow: 6px 6px 3px 0px #2A4BC8;
+    border: 20px solid #4ac82a;
+    box-shadow: 6px 6px 3px 0px #4a8c39;
 }
 
 .scissors{
@@ -159,7 +164,7 @@ section{
     display: none;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    margin-top: 100px;
 }
 
 .user{
@@ -197,13 +202,14 @@ section{
     cursor:pointer;
 }
 
-@keyframes slideaway {
-    from { display: flex; }
+@keyframes scale-up {
+    from { transform: scale(0.5);}
     to { transform: scale(1.5);}
   }
   
   .result-container {
-    animation: slideaway 1s ease-out;
+    animation: scale-up 1s ease-out;
+    transform: scale(1.5);
   }
 
 
