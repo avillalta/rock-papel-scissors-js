@@ -65,8 +65,8 @@ function getResult(userHand, oponentHand){
 function resetGame(){
     document.querySelector('.game-container').setAttribute('style', 'display: block')
     document.querySelector('.result-container').setAttribute('style', 'display: none')
-    document.querySelector('#user').setAttribute("class", "btn");
-    document.querySelector('#oponent').setAttribute("class", "btn");
+    document.querySelector('#user').setAttribute("class", "circle");
+    document.querySelector('#oponent').setAttribute("class", "circle");
 }
 
 function setScore(){

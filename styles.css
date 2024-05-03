@@ -33,7 +33,6 @@ section{
     justify-content: space-between;
     border: 2px solid #586480;
     border-radius: 10px;
-    transition: 5s ease-in-out all;
 }
 
 .info-container ul{
@@ -41,7 +40,11 @@ section{
 }
 
 .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-grow: 1;
+    width: 600px;
 }
 
 .score-container {
@@ -157,8 +160,6 @@ section{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    --height: 400px;
-    --order: solid;
 }
 
 .user{
@@ -166,7 +167,6 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    --border: solid;
 }
 
 .oponent{
@@ -174,7 +174,6 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    --border: solid;
 }
 
 .result-info{
@@ -183,11 +182,59 @@ section{
     gap: 15px;
 }
 
+
+#result{
+    display: flex;
+    justify-content: center;
+}
+
 .replay-btn{
     font-family: "Jersey 25", sans-serif;
     font-size: 20px;
     height: 40px;
+    padding: 5px;
     border-radius: 10px;
     cursor:pointer;
 }
 
+@keyframes slideaway {
+    from { display: flex; }
+    to { transform: scale(1.5);}
+  }
+  
+  .result-container {
+    animation: slideaway 1s ease-out;
+  }
+
+
+  circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: #fff;
+    animation: btn-transition 1s ease 0s;
+  }
+
+  .user-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .oponent-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .label-election{
+    margin-bottom: 20px;
+    font-family: "Jersey 25", sans-serif;
+  }
